@@ -21,7 +21,7 @@ function InputBill({ setBillVlaue, billValue }: InputBillProps) {
         step="0.01"
         placeholder="0"
         onChange={(e) => setBillVlaue(Number(e.target.value))}
-        value={billValue}
+        value={billValue === 0 ? "" : billValue}
         className="text-end bg-veryLightGrayishCyan h-[35px] rounded-[5px] p-3 mt-2 focus:outline-none focus:ring-2 ring-strongCyan text-[18px]"
       />
     </div>

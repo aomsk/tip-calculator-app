@@ -10,8 +10,8 @@
 .dollar-strongCyan {
   background-color: hsl(172, 67%, 45%);
   /* defines the background color of the image */
-  mask: url(../public//static/images/icon-dollar.svg) no-repeat center / contain;
-  -webkit-mask: url(../public//static/images/icon-dollar.svg) no-repeat center / contain;
+  mask: url(../static/images/icon-dollar.svg) no-repeat center / contain;
+  -webkit-mask: url(../static/images/icon-dollar.svg) no-repeat center / contain;
 }
 
 .icon {

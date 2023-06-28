@@ -14,11 +14,13 @@ function App() {
 
   useEffect(() => {
     let totalTip: number;
-    if (cusTomTipValue !== 0) {
+
+    if (cusTomTipValue !== 0 && tipValue === 0) {
       totalTip = billValue * (cusTomTipValue / 100);
     } else {
       totalTip = billValue * (tipValue / 100);
     }
+
     const tipAmountPerson = totalTip / numberPeople;
     const totoalAmountPerson = (billValue + totalTip) / numberPeople;
     if (numberPeople !== 0) {

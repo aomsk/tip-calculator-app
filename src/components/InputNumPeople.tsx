@@ -18,10 +18,10 @@ function InputNumPeople({ setNumberPeople, numberPeople }: InputNumPeopleProps) 
         </div>
         <input
           type="number"
-          placeholder="0"
+          placeholder="2"
           min={2}
           onChange={(e) => setNumberPeople(Number(e.target.value))}
-          value={numberPeople}
+          value={numberPeople === 2 ? "" : numberPeople}
           className={
             numberPeople === 0
               ? "text-right bg-veryLightGrayishCyan w-full h-[35px] rounded-[5px] p-3 mt-2 text-pink-600 border-2 border-solid border-pink-600 focus:outline-none focus:ring-1 ring-pink-600 text-[18px]"

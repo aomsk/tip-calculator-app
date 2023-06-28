@@ -22,12 +22,15 @@ function ButtonTip({ setTipVlaue, setCusTomTipValue, cusTomTipValue }: ButtonTip
           );
         })}
         <input
-          type="text"
-          dir="rtl"
-          className="bg-veryLightGrayishCyan h-[40px] rounded-[5px] p-3 focus:outline-none focus:ring-2 ring-strongCyan"
+          type="number"
+          // dir="rtl"
+          className="text-end bg-veryLightGrayishCyan h-[40px] rounded-[5px] px-4 focus:outline-none focus:ring-2 ring-strongCyan"
           placeholder="Custom"
-          onChange={(e) => setCusTomTipValue(Number(e.target.value))}
-          value={cusTomTipValue}
+          onChange={(e) => {
+            setCusTomTipValue(Number(e.target.value));
+            setTipVlaue(0);
+          }}
+          value={cusTomTipValue === 0 ? "" : cusTomTipValue}
         />
       </div>
     </div>
