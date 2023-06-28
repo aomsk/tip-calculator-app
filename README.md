@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![tip-calculator-app-creenshot](https://github.com/aomsk/tip-calculator-app/blob/main/src/assets/tip-calculator-app-creenshot.png?raw=true)
 
 ### Links
 
