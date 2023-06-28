@@ -4,6 +4,7 @@ import InputBill from "./components/InputBill";
 import ButtonTip from "./components/ButtonTip";
 import InputNumPeople from "./components/InputNumPeople";
 import ShowResult from "./components/ShowResult";
+
 function App() {
   const [billValue, setBillVlaue] = useState<number>(0);
   const [tipValue, setTipVlaue] = useState<number>(0);
